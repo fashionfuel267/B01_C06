@@ -1,0 +1,19 @@
+<!-- {{insTtype|json}} -->
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{insTtype.TypeName}}</h5>
+   
+      <p class="card-text">{{insTtype.TypeDescription}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{insTtype.DomainName}}</li>
+      <li class="list-group-item">{{insTtype.IP}}</li>
+      <li class="list-group-item">{{insTtype.IsActive}}</li>
+    </ul>
+    <div class="card-body">
+      <a  href="/" class="card-link">Back to list</a>
+  
+      <button (click)="Delete(insTtype.Id)" class="card-link btn btn-danger">Delete</button>
+    </div>
+  </div>

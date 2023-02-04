@@ -1,0 +1,19 @@
+<table class="table">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th><td></td>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of insTpe">
+
+        <td>{{item.TypeName}}-{{item.Id}}</td>
+        <td>{{item.TypeDescription}}</td>
+        <td>
+            <a [routerLink]="['details',item.Id]">Show <Details></Details></a>
+        </td>
+    </tr>
+</tbody>
+</table>
+<!-- {{insTpe|json}} -->
